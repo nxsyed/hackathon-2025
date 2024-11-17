@@ -1,5 +1,3 @@
-import { DemoBanner } from '@/components/DemoBanner';
-import { LocaleSwitcher } from '@/components/LocaleSwitcher';
 import { BaseTemplate } from '@/templates/BaseTemplate';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -17,7 +15,6 @@ export default async function Layout(props: {
 
   return (
     <>
-      <DemoBanner />
       <BaseTemplate
         leftNav={(
           <>
@@ -31,7 +28,7 @@ export default async function Layout(props: {
             </li>
             <li>
               <Link
-                href="/about/"
+                href="/FAQs/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
                 {t('about_link')}
@@ -39,26 +36,26 @@ export default async function Layout(props: {
             </li>
             <li>
               <Link
-                href="/counter/"
+                href="/Schedule/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
-                {t('counter_link')}
+                Schedule
               </Link>
             </li>
             <li>
               <Link
-                href="/portfolio/"
+                href="/Speakers/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
-                {t('portfolio_link')}
+                Speakers
               </Link>
             </li>
             <li>
               <a
                 className="border-none text-gray-700 hover:text-gray-900"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
+                href="https://discord.gg/pwtSm9KWSv"
               >
-                GitHub
+                Discord
               </a>
             </li>
           </>
@@ -67,25 +64,13 @@ export default async function Layout(props: {
           <>
             <li>
               <Link
-                href="/sign-in/"
+                href="https://chivalrous-period-295.notion.site/141c80fa0d47809f8f19ff1e30087235?pvs=105"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
-                {t('sign_in_link')}
+                Register
               </Link>
             </li>
 
-            <li>
-              <Link
-                href="/sign-up/"
-                className="border-none text-gray-700 hover:text-gray-900"
-              >
-                {t('sign_up_link')}
-              </Link>
-            </li>
-
-            <li>
-              <LocaleSwitcher />
-            </li>
           </>
         )}
       >

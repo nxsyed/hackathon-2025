@@ -8,8 +8,7 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
-    "made_with": "Made with <author></author>."
+    "description": "Over the course of 2 days, either yourself, or a maximum amount of 4 people, will learn from sponsors to solve problems in the restaurant industry, attend a workshop, and pitch your solution to the restaurant owners for a chance to win some prizes."
   },
   "Index": {
     "meta_title": "Next.js Boilerplate Presentation",

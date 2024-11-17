@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { DemoBadge } from '@/components/DemoBadge';
 import { routing } from '@/libs/i18nNavigation';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
@@ -62,7 +61,6 @@ export default async function RootLayout(props: {
         >
           {props.children}
 
-          <DemoBadge />
         </NextIntlClientProvider>
       </body>
     </html>
