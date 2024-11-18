@@ -1,10 +1,12 @@
-"use client"
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 
-export const FAQ = () => {
-  const [activeSection, setActiveSection] = useState(1);
+export const FAQ: React.FC = () => {
+  // Active section state, initialized to null
+  const [activeSection, setActiveSection] = useState<number | null>(1);
 
-  const toggleSection = (section) => {
+  // Toggle section function
+  const toggleSection = (section: number): void => {
     setActiveSection(activeSection === section ? null : section);
   };
 
@@ -15,15 +17,15 @@ export const FAQ = () => {
         <h2 id="accordion-collapse-heading-1">
           <button
             type="button"
-            className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
             onClick={() => toggleSection(1)}
             aria-expanded={activeSection === 1}
             aria-controls="accordion-collapse-body-1"
           >
             <span>What is a hackathon?</span>
             <svg
-              className={`w-3 h-3 transform ${activeSection === 1 ? "rotate-180" : ""
-                }`}
+              className={`size-3${activeSection === 1 ? 'rotate-180' : ''
+              }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -42,7 +44,7 @@ export const FAQ = () => {
         {activeSection === 1 && (
           <div
             id="accordion-collapse-body-1"
-            className="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+            className="border border-b-0 border-gray-200 p-5 dark:border-gray-700"
             aria-labelledby="accordion-collapse-heading-1"
           >
             <p className="mb-2 text-gray-500 dark:text-gray-400">
@@ -60,15 +62,15 @@ export const FAQ = () => {
         <h2 id="accordion-collapse-heading-2">
           <button
             type="button"
-            className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            className="flex w-full items-center justify-between gap-3 border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
             onClick={() => toggleSection(2)}
             aria-expanded={activeSection === 2}
             aria-controls="accordion-collapse-body-2"
           >
             <span>Is there a fee to participate?</span>
             <svg
-              className={`w-3 h-3 transform ${activeSection === 2 ? "rotate-180" : ""
-                }`}
+              className={`size-3${activeSection === 2 ? 'rotate-180' : ''
+              }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -87,7 +89,7 @@ export const FAQ = () => {
         {activeSection === 2 && (
           <div
             id="accordion-collapse-body-2"
-            className="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+            className="border border-b-0 border-gray-200 p-5 dark:border-gray-700"
             aria-labelledby="accordion-collapse-heading-2"
           >
             <p className="mb-2 text-gray-500 dark:text-gray-400">
@@ -102,15 +104,15 @@ export const FAQ = () => {
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
-            className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
             onClick={() => toggleSection(3)}
             aria-expanded={activeSection === 3}
             aria-controls="accordion-collapse-body-3"
           >
             <span>What is the goal for the hackathon?</span>
             <svg
-              className={`w-3 h-3 transform ${activeSection === 3 ? "rotate-180" : ""
-                }`}
+              className={`size-3${activeSection === 3 ? 'rotate-180' : ''
+              }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -129,7 +131,7 @@ export const FAQ = () => {
         {activeSection === 3 && (
           <div
             id="accordion-collapse-body-3"
-            className="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            className="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
             aria-labelledby="accordion-collapse-heading-3"
           >
             <p className="mb-2 text-gray-500 dark:text-gray-400">
@@ -144,15 +146,15 @@ export const FAQ = () => {
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
-            className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
             onClick={() => toggleSection(3)}
             aria-expanded={activeSection === 4}
             aria-controls="accordion-collapse-body-3"
           >
             <span>Can I register as an Individual or as a team?</span>
             <svg
-              className={`w-3 h-3 transform ${activeSection === 3 ? "rotate-180" : ""
-                }`}
+              className={`size-3${activeSection === 3 ? 'rotate-180' : ''
+              }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -171,15 +173,17 @@ export const FAQ = () => {
         {activeSection === 3 && (
           <div
             id="accordion-collapse-body-3"
-            className="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            className="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
             aria-labelledby="accordion-collapse-heading-3"
           >
             <p className="mb-2 text-gray-500 dark:text-gray-400">
               That’s totally up to you! You can either participate by yourself or you can team up with maximum four people.
               Either bring your own team or feel free to form your own with new people at the event.
             </p>
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-              <a href="https://chivalrous-period-295.notion.site/141c80fa0d47809f8f19ff1e30087235?pvs=105" className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"             
+            <button className="group relative mb-2 me-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:text-white dark:focus:ring-purple-800">
+              <a
+                href="https://chivalrous-period-295.notion.site/141c80fa0d47809f8f19ff1e30087235?pvs=105"
+                className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900"
               >
                 Register
               </a>

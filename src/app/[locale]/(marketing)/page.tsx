@@ -1,5 +1,5 @@
-import { Sponsors } from '@/components/Sponsors';
 import { FAQ } from '@/components/FAQ';
+import { Sponsors } from '@/components/Sponsors';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type IIndexProps = {
@@ -22,10 +22,6 @@ export async function generateMetadata(props: IIndexProps) {
 export default async function Index(props: IIndexProps) {
   const { locale } = await props.params;
   setRequestLocale(locale);
-  const t = await getTranslations({
-    locale,
-    namespace: 'Index',
-  });
 
   return (
     <>

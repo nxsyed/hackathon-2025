@@ -12,7 +12,7 @@ export const BaseTemplate = (props: {
     <div className="w-full px-1 text-gray-700 antialiased">
       <div className="mx-auto max-w-screen-md">
         <header className="border-b border-gray-300">
-        <div className="flex justify-between">
+          <div className="flex justify-between">
             <nav>
               <ul className="flex flex-wrap gap-x-5 text-xl">
                 {props.leftNav}
@@ -32,7 +32,6 @@ export const BaseTemplate = (props: {
             <h2 className="text-xl">{t('description')}</h2>
           </div>
 
-          
         </header>
 
         <main>{props.children}</main>
