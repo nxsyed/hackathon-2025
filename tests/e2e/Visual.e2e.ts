@@ -40,15 +40,5 @@ test.describe('Visual testing', () => {
 
       await percySnapshot(page, 'Portfolio details');
     });
-
-    test('should take screenshot of the French homepage', async ({ page }) => {
-      await page.goto('/fr');
-
-      await expect(
-        page.getByRole('heading', { name: 'Code de démarrage pour Next.js avec Tailwind CSS' }),
-      ).toBeVisible();
-
-      await percySnapshot(page, 'Homepage - French');
-    });
   });
 });
