@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { routing } from '@/libs/i18nNavigation';
+import { Analytics } from '@vercel/analytics/react';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
@@ -62,6 +63,7 @@ export default async function RootLayout(props: {
           {props.children}
 
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
