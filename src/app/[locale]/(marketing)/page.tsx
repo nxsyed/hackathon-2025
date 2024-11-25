@@ -1,7 +1,7 @@
+import { AwardsList } from '@/components/AwardsList';
 import { FAQ } from '@/components/FAQ';
+import { SpeakerList } from '@/components/SpeakerList';
 import { Sponsors } from '@/components/Sponsors';
-import { SpeakerList } from "@/components/SpeakerList";
-import { AwardsList } from "@/components/AwardsList";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type IIndexProps = {
@@ -24,36 +24,36 @@ export async function generateMetadata(props: IIndexProps) {
 const speakers = [
   {
     id: 1,
-    name: "Syed Ahmed",
-    jobTitle: "Software @ PsiQuantum",
-    imageSrc: "/assets/images/syed-ahmed.jpeg",
-    industries: ["HPC", "Parallel Computing", "Distributed Computing", "Cyber Security"],
+    name: 'Syed Ahmed',
+    jobTitle: 'Software @ PsiQuantum',
+    imageSrc: '/assets/images/syed-ahmed.jpeg',
+    industries: ['HPC', 'Parallel Computing', 'Distributed Computing', 'Cyber Security'],
   },
   {
     id: 2,
-    name: "Trevor Vincent",
-    jobTitle: "Quantum Algorithms @ PsiQuantum",
-    imageSrc: "/assets/images/trevor-vincent.jpeg",
-    industries: ["Quantum Computing", "Physics", "Quantum Algorithms", "HPC"],
+    name: 'Trevor Vincent',
+    jobTitle: 'Quantum Algorithms @ PsiQuantum',
+    imageSrc: '/assets/images/trevor-vincent.jpeg',
+    industries: ['Quantum Computing', 'Physics', 'Quantum Algorithms', 'HPC'],
   },
   {
     id: 3,
-    name: "Siddhartha Rao Kamalakara",
-    jobTitle: "Machine Learning Engineer @ Runway AI",
-    imageSrc: "/assets/images/trevor-vincent.jpeg",
-    industries: ["Artificial Intelligence", "Machine Learning", "Model Scaling"],
+    name: 'Siddhartha Rao Kamalakara',
+    jobTitle: 'Machine Learning Engineer @ Runway AI',
+    imageSrc: '/assets/images/trevor-vincent.jpeg',
+    industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
   },
 ];
 
 const awards = [
   {
     id: 1,
-    title: "Best Small Business Solution",
-    description: "Build a project that is voted by the judges as the best solution to a small business problem",
-    reward: "$500",
-    sponsor: "Youthful Vengence",
-    sponsor_link: "https://youthfulvengeance.com/",
-  }
+    title: 'Best Small Business Solution',
+    description: 'Build a project that is voted by the judges as the best solution to a small business problem',
+    reward: '$500',
+    sponsor: 'Youthful Vengence',
+    sponsor_link: 'https://youthfulvengeance.com/',
+  },
 ];
 
 export default async function Index(props: IIndexProps) {

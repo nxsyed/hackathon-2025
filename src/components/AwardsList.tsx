@@ -1,30 +1,29 @@
-import React from "react";
+import React from 'react';
 
-interface Award {
+type Award = {
   id: number;
   title: string;
   description: string;
   reward: string;
   sponsor: string;
   sponsor_link: string;
-}
+};
 
-interface AwardsListProps {
+type AwardsListProps = {
   awards: Award[];
-}
-
+};
 
 export const AwardsList: React.FC<AwardsListProps> = ({ awards }) => {
   return (
-    <div className="grid grid-cols-1 :grid-cols-3 gap-6">
-      {awards.map((award) => (
+    <div className=":grid-cols-3 grid grid-cols-1 gap-6">
+      {awards.map(award => (
         <div
           key={award.id}
-          className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          className="w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
         >
           <div className="p-6">
             <svg
-              className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
+              className="mb-3 size-7 text-gray-500 dark:text-gray-400"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -36,7 +35,9 @@ export const AwardsList: React.FC<AwardsListProps> = ({ awards }) => {
               {award.title}
             </h4>
             <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              Prize: {award.reward}
+              Prize:
+              {' '}
+              {award.reward}
             </h5>
             <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
               {award.description}
@@ -46,11 +47,13 @@ export const AwardsList: React.FC<AwardsListProps> = ({ awards }) => {
             href={award.sponsor_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center font-medium text-blue-600 hover:underline p-4"
+            className="inline-flex items-center p-4 font-medium text-blue-600 hover:underline"
           >
-            Sponsored by {award.sponsor}
+            Sponsored by
+            {' '}
+            {award.sponsor}
             <svg
-              className="w-3 h-3 ml-2"
+              className="ml-2 size-3"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
