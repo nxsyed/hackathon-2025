@@ -24,7 +24,7 @@ export const FAQ: React.FC = () => {
           >
             <span>What is a hackathon?</span>
             <svg
-              className={`size-3${activeSection === 1 ? 'rotate-180' : ''
+              className={`size-3 ${activeSection === 1 ? 'rotate-180' : ''
               }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export const FAQ: React.FC = () => {
           >
             <span>Is there a fee to participate?</span>
             <svg
-              className={`size-3${activeSection === 2 ? 'rotate-180' : ''
+              className={`size-3 ${activeSection === 2 ? 'rotate-180' : ''
               }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ export const FAQ: React.FC = () => {
           >
             <span>What is the goal for the hackathon?</span>
             <svg
-              className={`size-3${activeSection === 3 ? 'rotate-180' : ''
+              className={`size-3 ${activeSection === 3 ? 'rotate-180' : ''
               }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ export const FAQ: React.FC = () => {
           >
             <span>Can I register as an Individual or as a team?</span>
             <svg
-              className={`size-3${activeSection === 3 ? 'rotate-180' : ''
+              className={`size-3 ${activeSection === 3 ? 'rotate-180' : ''
               }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
