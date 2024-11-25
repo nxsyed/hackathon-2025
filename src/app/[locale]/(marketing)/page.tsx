@@ -3,7 +3,6 @@ import { Sponsors } from '@/components/Sponsors';
 import { SpeakerList } from "@/components/SpeakerList";
 import { AwardsList } from "@/components/AwardsList";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import type { title } from 'process';
 
 type IIndexProps = {
   params: Promise<{ locale: string }>;
