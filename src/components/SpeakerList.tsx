@@ -27,7 +27,6 @@ export const SpeakerList: React.FC<SpeakerListProps> = ({ speakers }) => {
               <img
                 className="size-full object-cover"
                 src={speaker.imageSrc}
-                alt={`${speaker.name}'s photo`}
               />
             </div>
             <h5 className="mb-2 text-center text-xl font-medium text-gray-900 dark:text-white">
