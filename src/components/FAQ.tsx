@@ -128,7 +128,7 @@ export const FAQ: React.FC = () => {
             </svg>
           </button>
         </h2>
-        {activeSection === 4 && (
+        {activeSection === 3 && (
           <div
             id="accordion-collapse-body-3"
             className="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
@@ -153,7 +153,7 @@ export const FAQ: React.FC = () => {
           >
             <span>Can I register as an Individual or as a team?</span>
             <svg
-              className={`size-3 ${activeSection === 3 ? 'rotate-180' : ''
+              className={`size-3 ${activeSection === 4 ? 'rotate-180' : ''
               }`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export const FAQ: React.FC = () => {
             </svg>
           </button>
         </h2>
-        {activeSection === 3 && (
+        {activeSection === 4 && (
           <div
             id="accordion-collapse-body-3"
             className="border border-t-0 border-gray-200 p-5 dark:border-gray-700"

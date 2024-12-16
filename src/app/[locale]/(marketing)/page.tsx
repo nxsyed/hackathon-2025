@@ -40,7 +40,7 @@ const speakers = [
     id: 3,
     name: 'Siddhartha Rao Kamalakara',
     jobTitle: 'Machine Learning Engineer @ Runway AI',
-    imageSrc: '/assets/images/sid-rao.jpeg',
+    imageSrc: '/assets/images/sid-rao.JPG',
     industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
   },
 ];
