@@ -128,7 +128,7 @@ export const FAQ: React.FC = () => {
             </svg>
           </button>
         </h2>
-        {activeSection === 3 && (
+        {activeSection === 4 && (
           <div
             id="accordion-collapse-body-3"
             className="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
