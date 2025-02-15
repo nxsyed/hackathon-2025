@@ -29,6 +29,20 @@ export const metadata: Metadata = {
       url: '/favicon.ico',
     },
   ],
+  openGraph: {
+    title: 'Bits and Bites TO',
+    description: 'Join the ultimate hackathon experience in Toronto!',
+    url: 'https://hackathon-2025.vercel.app/', // Change this to your actual URL
+    type: 'website',
+    images: [
+      {
+        url: '/bitsandbites.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bits and Bites TO Hackathon',
+      },
+    ],
+  },
 };
 
 export function generateStaticParams() {
