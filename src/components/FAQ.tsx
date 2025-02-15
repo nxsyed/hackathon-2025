@@ -17,7 +17,7 @@ export const FAQ: React.FC = () => {
         <h2 id="accordion-collapse-heading-1">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
             onClick={() => toggleSection(1)}
             aria-expanded={activeSection === 1}
             aria-controls="accordion-collapse-body-1"
@@ -62,7 +62,7 @@ export const FAQ: React.FC = () => {
         <h2 id="accordion-collapse-heading-2">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+            className="flex w-full items-center justify-between gap-3 border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
             onClick={() => toggleSection(2)}
             aria-expanded={activeSection === 2}
             aria-controls="accordion-collapse-body-2"
@@ -104,7 +104,7 @@ export const FAQ: React.FC = () => {
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
             onClick={() => toggleSection(3)}
             aria-expanded={activeSection === 3}
             aria-controls="accordion-collapse-body-3"
@@ -146,7 +146,7 @@ export const FAQ: React.FC = () => {
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
             onClick={() => toggleSection(3)}
             aria-expanded={activeSection === 4}
             aria-controls="accordion-collapse-body-3"

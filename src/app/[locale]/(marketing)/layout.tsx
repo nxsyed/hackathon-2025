@@ -1,6 +1,6 @@
 import { BaseTemplate } from '@/templates/BaseTemplate';
 import Link from 'next/link';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 
 export default async function Layout(props: {
   children: React.ReactNode;
@@ -8,10 +8,6 @@ export default async function Layout(props: {
 }) {
   const { locale } = await props.params;
   setRequestLocale(locale);
-  const t = await getTranslations({
-    locale,
-    namespace: 'RootLayout',
-  });
 
   return (
     <>
