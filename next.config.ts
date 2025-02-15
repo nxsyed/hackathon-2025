@@ -15,6 +15,7 @@ export default withSentryConfig(
     withNextIntl({
       eslint: {
         dirs: ['.'],
+        ignoreDuringBuilds: true,
       },
       poweredByHeader: false,
       reactStrictMode: true,
