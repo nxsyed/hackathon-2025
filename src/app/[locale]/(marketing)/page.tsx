@@ -1,5 +1,6 @@
 import { AwardsList } from '@/components/AwardsList';
 import { FAQ } from '@/components/FAQ';
+import HackathonSchedule from '@/components/HackathonSchedule';
 import { SpeakerList } from '@/components/SpeakerList';
 import { Sponsors } from '@/components/Sponsors';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -40,7 +41,7 @@ const speakers = [
     id: 3,
     name: 'Siddhartha Rao Kamalakara',
     jobTitle: 'Machine Learning Engineer @ Runway AI',
-    imageSrc: '/assets/images/sid-rao.JPG',
+    imageSrc: '/assets/images/sid.jpeg',
     industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
   },
 ];
@@ -72,6 +73,8 @@ export default async function Index(props: IIndexProps) {
       <FAQ />
       <h2 className="mt-5 text-2xl font-bold">Speakers</h2>
       <SpeakerList speakers={speakers} />
+
+      <HackathonSchedule />
 
       <h2 className="mt-5 text-2xl font-bold">Awards Categories</h2>
       <AwardsList awards={awards} />

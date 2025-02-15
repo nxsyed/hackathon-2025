@@ -14,6 +14,14 @@ export const Sponsors = () => (
               height={224}
             />
           </a>
+          <a href="lptbia.com" target="_blank" rel="noopener">
+            <Image
+              src="/assets/images/bia.png"
+              alt="Little Portugal Toronto BIA"
+              width={260}
+              height={224}
+            />
+          </a>
         </td>
       </tr>
     </tbody>
