@@ -39,7 +39,7 @@ const speakers = [
   },
   {
     id: 3,
-    name: 'Sylvie Shie',
+    name: 'Sylvie Shi',
     jobTitle: 'Machine Learning Engineer @ Cohere Ai',
     imageSrc: '/assets/images/sylvie.png',
     industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
