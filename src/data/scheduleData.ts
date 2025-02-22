@@ -39,7 +39,7 @@ export const saturdaySchedule: ScheduleItem[] = [
   },
   {
     time: '10:45 – 11:45 AM',
-    title: 'Workshop #1: LLM & Software Dev Foundations',
+    title: 'Millin Gabani: LLM & Software Dev Foundations',
     details: 'Intro to LLMs and key dev tools, including GMB API basics.',
     type: 'workshop',
   },
@@ -57,7 +57,7 @@ export const saturdaySchedule: ScheduleItem[] = [
   },
   {
     time: '2:00 – 3:00 PM',
-    title: 'Workshop #2: Advanced LLM Techniques & Best Practices',
+    title: 'Sylvie Shi: Advanced LLM Techniques & Best Practices',
     details: 'Deeper dive into data cleaning, enrichment, and automation with LLMs.',
     type: 'workshop',
   },
@@ -69,7 +69,7 @@ export const saturdaySchedule: ScheduleItem[] = [
   },
   {
     time: '5:00 – 6:00 PM',
-    title: 'Workshop #3: LLM Integration & Web Deployment',
+    title: 'Trevor Vincent: LLM Integration & Web Deployment',
     details: 'Integrate an LLM pipeline, discuss real-time updates and testing.',
     type: 'workshop',
   },
@@ -101,8 +101,8 @@ export const sundaySchedule: ScheduleItem[] = [
   },
   {
     time: '10:00 – 11:00 AM',
-    title: 'Workshop #4: Production-Ready Code & Scalability',
-    details: 'Tips for optimization, security, and handling 400+ business entries.',
+    title: 'Zeeshan Ahmed: Career guidance and startups',
+    details: 'Tips and guidance for running a startup and navigating your career',
     type: 'workshop',
   },
   {
