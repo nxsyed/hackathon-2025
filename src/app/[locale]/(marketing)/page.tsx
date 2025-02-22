@@ -25,10 +25,10 @@ export async function generateMetadata(props: IIndexProps) {
 const speakers = [
   {
     id: 1,
-    name: 'Syed Ahmed',
-    jobTitle: 'Software @ PsiQuantum',
-    imageSrc: '/assets/images/syed-ahmed.jpeg',
-    industries: ['HPC', 'Parallel Computing', 'Distributed Computing', 'Cyber Security'],
+    name: 'Zeeshan Ahmed',
+    jobTitle: 'Head of Finance @ Finni Health',
+    imageSrc: '/assets/images/zeeshan.jpeg',
+    industries: ['Startups', 'Finance', 'Venture Capital'],
   },
   {
     id: 2,
@@ -39,9 +39,16 @@ const speakers = [
   },
   {
     id: 3,
-    name: 'Siddhartha Rao Kamalakara',
-    jobTitle: 'Machine Learning Engineer @ Runway AI',
-    imageSrc: '/assets/images/sid.jpeg',
+    name: 'Sylvie Shie',
+    jobTitle: 'Machine Learning Engineer @ Cohere Ai',
+    imageSrc: '/assets/images/sylvie.png',
+    industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
+  },
+  {
+    id: 4,
+    name: 'Millin Gabani',
+    jobTitle: 'Founder @ KeyFlow',
+    imageSrc: '/assets/images/milin.png',
     industries: ['Artificial Intelligence', 'Machine Learning', 'Model Scaling'],
   },
 ];
@@ -51,7 +58,15 @@ const awards = [
     id: 1,
     title: 'Best Small Business Solution',
     description: 'Build a project that is voted by the judges as the best solution to a small business problem',
-    reward: '$500',
+    reward: '$200',
+    sponsor: 'Little Portual Toronto',
+    sponsor_link: 'https://lptbia.com/',
+  },
+  {
+    id: 2,
+    title: 'Best use of LLM models',
+    description: `show off the most creative way to use an LLM`,
+    reward: '$100',
     sponsor: 'Youthful Vengence',
     sponsor_link: 'https://youthfulvengeance.com/',
   },
